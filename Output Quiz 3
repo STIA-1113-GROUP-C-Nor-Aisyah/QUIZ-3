@@ -1,0 +1,18 @@
+How many number you want to enter: 
+5
+Enter 5 array number: 
+9
+6
+3
+2
+5
+The array number is: 
+9 
+6 
+3 
+2 
+5 
+What number do you want to search: 
+7
+The search value is not in the list.
+Array Elements in Ascending Order: 2, 3, 5, 6, 9
