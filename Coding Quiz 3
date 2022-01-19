@@ -1,0 +1,83 @@
+package quiz3;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class ArrayMethodProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner (System.in);
+		int [] list = new int [5];
+		AcceptArray(list);
+		
+		DisplayArray(list);
+		
+		SearchValue(list);
+		
+		SortArray(list);
+	}
+	
+	static void AcceptArray(int[] list){
+		Scanner sc = new Scanner (System.in);
+		System.out.println("How many number you want to enter: ");
+		int num = sc.nextInt();
+		System.out.println("Enter " + num + " array number: ");
+		for (int i = 0; i < list.length; i++) {
+			list[i] = sc.nextInt();
+			
+	
+		}
+		
+	}
+	public static void DisplayArray(int[] list) {
+		System.out.println("The array number is: ");
+		for (int a = 0; a < list.length; a++){
+		System.out.println(list[a] + " ");
+				}
+		
+			}
+	
+	 static void SearchValue(int[] list){
+		 Scanner sc = new Scanner (System.in);
+		 System.out.println("What number do you want to search: ");
+		 int search = sc.nextInt();
+		 for (int a = 0; a < 1; a++){
+		   if(search == list [a] ){
+			   System.out.println("Your number in list.");
+		   }
+		   else
+			   System.out.println("The search value is not in the list.");
+		       }
+		
+	 }
+	 
+	 static void SortArray(int [] list) {
+		 int count = 5;
+		 int temp;
+	        for (int i = 0; i < count; i++) 
+	        {
+	            for (int j = i + 1; j < count; j++) { 
+	                if (list[i] > list[j]) 
+	                {
+	                    temp = list[i];
+	                    list[i] = list[j];
+	                    list[j] = temp;
+	                }
+	            }
+	        }
+	        System.out.print("Array Elements in Ascending Order: ");
+	        for (int i = 0; i < count - 1; i++) 
+	        {
+	            System.out.print(list[i] + ", ");
+	        }
+	        System.out.print(list[count - 1]);
+	     
+	     }
+	
+}
+	
+
+
+
